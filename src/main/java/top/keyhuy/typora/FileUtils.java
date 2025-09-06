@@ -15,8 +15,13 @@ public class FileUtils {
     /**
      * 文件允许的后缀扩展名
      */
+    /* modify at 20250906 beg */
+    //public static String[] FILE_SUFFIX =
+    //        new String[] { "png", "bmp", "jpg", "jpeg", "pdf", "zip", "doc"};
+    // 去掉nmp文件格式
     public static String[] FILE_SUFFIX =
-            new String[] { "png", "bmp", "jpg", "jpeg", "pdf", "zip", "doc"};
+            new String[] { "png", "jpg", "jpeg", "pdf", "zip", "doc"};
+    /* modify at 20250906 end */
 
     /**
      * 根据原始文件名生成新的不重复的文件名
