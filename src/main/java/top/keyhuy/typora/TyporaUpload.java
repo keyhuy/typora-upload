@@ -65,6 +65,9 @@ public class TyporaUpload {
 
         if (null == filename) {
             // 文件格式不合法
+            /* add by hot-fix at 20250906 beg */
+            System.err.println("文件格式不合法");
+            /* add by hot-fix at 20250906 end */
             throw new RuntimeException("文件格式不合法");
         }
 
