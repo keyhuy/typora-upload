@@ -34,6 +34,9 @@ public class TyporaUpload {
         // 密钥文件位置
         InputStream resource = this.getClass().getResourceAsStream("/cert/qiniuyun-oss.key");
         if (null == resource) {
+            /* add by dev at 20250906 beg */
+            System.err.println("上传失败");
+            /* add by dev at 20250906 end */
             throw new RuntimeException("上传失败");
         }
         // 读取密钥
