@@ -15,8 +15,13 @@ public class FileUtils {
     /**
      * 文件允许的后缀扩展名
      */
+    /* modify at 20250906 by hot-fix beg */
+    //public static String[] FILE_SUFFIX =
+    //        new String[] { "png", "bmp", "jpg", "jpeg", "pdf", "zip", "doc"};
+    // 增加ico文件格式
     public static String[] FILE_SUFFIX =
-            new String[] { "png", "bmp", "jpg", "jpeg", "pdf", "zip", "doc"};
+            new String[] { "png", "bmp", "jpg", "jpeg", "pdf", "zip", "doc", "ico" };
+    /* modify at 20250906 by hot-fix end */
 
     /**
      * 根据原始文件名生成新的不重复的文件名
